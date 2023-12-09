@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Home() {
-  const [todos, setTodos] = useState<string[]>([]);
+  const [todos, setTodos] = useState<string[]>([]); //use state
   const [inputValues, setInputValues] = useState("");
 
   const handleInputValues = (event: React.ChangeEvent<HTMLInputElement>) => {
